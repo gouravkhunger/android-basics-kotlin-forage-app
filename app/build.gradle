@@ -48,9 +48,6 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-    testOptions {
-        execution 'ANDROIDX_TEST_ORCHESTRATOR'
-    }
     buildFeatures {
         dataBinding true
         viewBinding true
@@ -89,4 +86,6 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.4.0'
     androidTestUtil 'androidx.test:orchestrator:1.4.0'
     debugImplementation "androidx.fragment:fragment-testing:1.3.3"
+
+    kapt "org.xerial:sqlite-jdbc:3.34.0"
 }
